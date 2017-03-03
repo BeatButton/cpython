@@ -449,7 +449,7 @@ class NormalizeTest(unittest.TestCase):
         self.check('ko_kr.euckr', 'ko_KR.eucKR')
         self.check('zh_cn.euc', 'zh_CN.eucCN')
         self.check('zh_tw.euc', 'zh_TW.eucTW')
-        self.check('zh_tw.euctw', 'zh_TW.eucTW')
+        self.check('zh_tw.euctw', 'zh_TW.EUC_TW')
 
     def test_japanese(self):
         self.check('ja', 'ja_JP.eucJP')
